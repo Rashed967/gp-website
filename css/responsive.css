@@ -1,0 +1,22 @@
+
+/* small devices  */
+@media only screen and (max-width : 480px) {
+    .banner_content, .banner_img{
+        width: 100%;
+    }
+    .banner_content {
+        text-align: center;
+    }
+    .banner_img img {
+        width: 93%;
+        left: 2%;
+        top: 8vh;
+    }
+    .banner_content .banner_btn {
+        padding: 9px 20px;
+        margin-top: 5px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    
+}

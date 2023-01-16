@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	outline: 0;
+	box-sizing: border-box;
 }
 
 a{
@@ -46,15 +47,16 @@ header{
 .header_content{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .header_content_left{
-	width: 33%;
+
 	height: 58px;
 }
 
 .header_img{
-	width: 33%;
+
 	height: 58px;
 	display: flex;
 	justify-content: center;
@@ -62,7 +64,7 @@ header{
 }
 
 .header_content_right{
-	width: 33%;
+
 	height: 58px;
 	text-align: right;
 }
@@ -211,22 +213,23 @@ header{
 
 /*banner part css start*/
 #banner {
-    width: 100%;
+    /* width: 100%; */
     height: 354px;
     background-color: #F5F5F5;
     padding-top: 32px;
     margin-top: 101px;
 }
+.banner-container{
+	display: flex;
+	flex-wrap: wrap;
 
+}
 .banner_content{
-	width: 30%;
-	float: left;
+	width: 50%;
 }
 
 .banner_img{
-	width: 70%;
-	float: left;
-	position: relative;
+	width: 50%;
 }
 
 .banner_content h3{
@@ -257,11 +260,11 @@ header{
 }
 
 .banner_img img {
-    width: 90%;
+    width: 110%;
     border-radius: 30px 0 30px 0;
-    position: absolute;
-    right: 0;
-    top: 35px;
+    position: relative;
+    left: 0;
+    top: 4vh;
 }
 
 /*banner part css end*/
@@ -269,34 +272,31 @@ header{
 /*service part css start*/
 
 #service {
-    margin-top: 57px;
+    margin-top: 10vh;
     width: 100%;
     height: 75px;
+	margin-bottom: 20vh;
 
 }
 
 
 .service_wraper {
     width: 90%;
-    height: 53px;
     display: flex;
+	flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+	padding: 0vh 0;
 }
 
 .service_box{
-	width: 8%;
-	height: 90px;
-	/*background-color: red;*/
+	/* height: 90px; */
 	text-align: center;
-
 }
 
 .service_box img{
-	margin-top: 10px;
-	height: 50px;
-	margin-bottom: 10px;
+
 }
 
 /*service part css end*/
